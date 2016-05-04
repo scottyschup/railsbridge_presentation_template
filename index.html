@@ -1,28 +1,27 @@
-<!doctype html>  
+<!doctype html>
 <html lang="en">
-  
+
   <head>
     <meta charset="utf-8">
-    
-    <title>RailsBridge Ruby Workshop at Code for America</title>
 
-    <meta name="description" content="Slides and links to a full-day Ruby immersion workshop">
-    <meta name="author" content="RailsBridge & Code for America">
+    <title>RailsBridge Workshop</title>
+
+    <meta name="description" content="Slides and links to a full-day Ruby on Rails immersion workshop">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    
+
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    
+
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
 
     <link rel="stylesheet" href="lib/css/zenburn.css">
   </head>
-  
+
   <body>
-    
+
     <div class="reveal">
 
       <!-- Used to fade in a background when a specific slide state is reached -->
@@ -31,57 +30,54 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section>
-          <h1>Ruby on Rails Workshop</h1>
-          <h3 class="inverted">July 20 & 21, 2012 &middot; San Francisco</h3>
-          <p>
-            <img src="img/logo-cfa.png" alt="Code for America" width="200"> + 
-            <img src="img/logo-railsbridge.png" alt="RailsBridge" width="200"> + 
-            <img src="img/logo-oreilly.gif" alt="OReilly Media" width="200">
-          </p>
+          <h1>RailsBridge<h1>
+          <h2>Workshop for Women</h2>
+          <h3 class="inverted">YOUR DATES HERE!!! &middot; YOUR CITY HERE!!!</h3>
+          <p>Get a name tag! Talk to a human!</p>
+          <p>We'll break into small groups after a brief presentation.</p>
+          <h3>SPONSOR LOGO HERE?!?!?!</h3>
         </section>
-        
+
         <section>
           <section>
             <h1>Where are we?</h1>
-            <p><img src="img/logo-cfa.png" alt="Code for America" width="100%" /></p>
-          </section>
-          <section>
-            <h1>Be a 2013 Fellow</h1>
-            <p><a href="http://www.codeforamerica.org/apply">http://www.codeforamerica.org/apply</a></p>
+            <p><img src="img/pivotal-logo.jpg" alt="Pivotal Labs" width="100%" /></p>
+            <p>BUT INSTEAD YOUR SPONSOR LOGO!!!</p>
           </section>
         </section>
-        
-        <section>
-          <h1>Thanks to our sponsor!</h1>
-          <p><img src="img/logo-oreilly.gif" alt="OReilly Media" width="100%"></p>
-        </section>
-        
+
         <section>
           <h1>Today is open source.</h1>
-          
-          <p>This workshop is a community project to<br> which many individuals have contributed.</p>
-          <p>All of the materials are open!</p>
+
+          <p>This workshop is a community project built by MANY volunteers. All of the materials are open source!</p>
           <ul>
-            <li>RailsBridge's <a href="http://wiki.railsbridge.org/projects/railsbridge/wiki/Workshops">Open Workshop Project</a></li>
-            <li>RailsBridge's <a href="http://github.com/railsbridge">GitHub page</a></li>
-            <li>Curriculum: <a href="http://curriculum.railsbridge.org">curriculum.railsbridge.org</a></li>
+            <li>The code: <a href="http://www.github.com/railsbridge">http://www.github.com/railsbridge</a></li>
+            <li>Curricula & Installfest: <a href="http://docs.railsbridge.org">http://docs.railsbridge.org</a></li>
+            <li>More info: <a href="http://www.railsbridge.org">http://www.railsbridge.org</a></li>
           </ul>
         </section>
-        
+
+        <section>
+          <h1>What is open source?</h1>
+          <p>"Generally, open source refers to a computer program in which the source code is available to the general public for use and/or modification from its original design."</p>
+          <p><i>http://en.wikipedia.org/wiki/Open_source</i></p><br />
+          <h2>It makes the Internet run!</h2>
+        </section>
+
         <!-- Example of nested vertical slides -->
         <section>
           <section>
             <h2>Why are we here?</h2>
             <p>To learn Ruby on Rails!</p>
             <p>&nbsp;</p>
-            <h2 class="fragment">And What's that?</h2>
+            <h2 class="fragment">And what is that?</h2>
             <div  class="fragment">
-              <p>Great question.</p>
-              <p>First, a brief digression&hellip;</p>
-              <p>&hellip; into web application plumbing.</p>
-              <p class="fragment">(No plungers necessary.)</p>
+              <p>That is an excellent question.</p>
+              <p>But first, let's talk about the Internet.</p><br />
+              <p><h2 class="fragment">&hellip;AND HOW IT WORKS</h2></p>
             </div>
           </section>
+        </section>
           <section>
             <h2>Web Application Plumbing</h2>
             <p><img src="img/diagram-webapp.png" alt="Diagram of a generalized web application." width="715" height="490" /></p>
@@ -97,32 +93,33 @@
             <pre class="fragment"><code># Outputs "I love Ruby"
 say = "I love Ruby"
 puts say
- 
+
 # Outputs "I *LOVE* RUBY"
 say['love'] = "*love*"
 puts say.upcase
- 
+
 # Outputs "I *love* Ruby" five times
 5.times { puts say }</code></pre>
           </section>
           <section>
             <h2>Rails is a framework.</h2>
-            <p>Frameworks are collections of scripts and utilities<br>that simplify writing web applications.</p>
-            <p>So what makes Rails special?</p>
+            <p>A framework is a collection of scripts and utilities that simplify writing web applications, kind of like a template!</p>
+            <p>Why do we use it?</p>
             <ul>
               <li class="fragment">It's written in the Ruby language.</li>
               <li class="fragment">It's <strong>opinionated</strong>.</li>
               <li class="fragment">It emphasizes <strong>convention over configuration</strong>.</li>
-              <li class="fragment">It encourages <strong>DRY</strong> -- Don't Repeat Yourself -- coding.</li>
+              <li class="fragment">It encourages <strong>DRY</strong> &mdash; Don't Repeat Yourself &mdash; coding.</li>
               <li class="fragment">It's database-agnostic.</li>
-              <li class="fragment">First developed by @dhh of 37signals.</li>
-              <li class="fragment">Open-sourced in 2004; shipped w/ Mac OS 10.5 in 2007.</li>
+              <li class="fragment">Open-sourced in 2004!</li>
             </ul>
           </section>
           <section>
-            <h2>Putting it all together...</h2>
-            <br>
-            <h3>Rails is a <u>FRAMEWORK</u> for <u>WEB APPLICATIONS</u> written in the Ruby <u>LANGUAGE</u>.</h3>
+            <h2>RAILS is a FRAMEWORK</h2>
+            <p>for</p>
+            <h2>WEB APPLICATIONS</h2>
+            <p>written in the</p>
+            <h2>RUBY PROGRAMMING LANGUAGE.</h2>
             <p>
               <img src="img/logo-ruby.jpg" alt="ruby-logo" height="100">
               <span style="font-size: 3em;"> + </span>
@@ -140,24 +137,20 @@ puts say.upcase
             <p>Focus on learning to program.</p>
           </div>
           <div class="fragment" style="margin-top:2em;">
-            <h3>Some of us will learn Rails, Heroku, and GitHub.</h3>
+            <h3>Some of us will learn Rails, Heroku, and Git.</h3>
             <p>Focus on tools and building a web application.</p>
           </div>
         </section>
 
         <section>
-          <h2>What tools &amp; services will we use?</h2>
-          <ul>
-            <li class="fragment"><b>rails</b>: a web application framework written in Ruby.</li>
-            <li class="fragment"><b>rake</b>: an easy way to run tasks. (like <code>make</code> for Ruby.)</li>
-            <li class="fragment"><b>database</b>: we'll use SQLite, but could be any relational database.</li>
-            <li class="fragment"><b>editor</b>: KomodoEdit or your favorite text editor.</li>
-            <li class="fragment"><b>heroku</b>: free hosting for Rails applications.</li>
-          </ul>
+          <h1>Ground Rules</h1>
+          <p class="fragment">As a community, RailsBridge works to make tech more accessible and more awesome. We have a Code of Conduct that is super important, and it includes an anti-harassment policy that we take very seriously.</p><br />
+          <p class="fragment">If you are harassed or witness harassment, please let an organizer or volunteer know as soon as you comfortably can.</p><br />
+          <p class="fragment">The complete text of our Code of Conduct can be found at <a href="http://railsbridge.github.io/code-of-conduct/">http://railsbridge.github.io/code-of-conduct</a>.
         </section>
 
         <section data-state="soothe">
-          <h2>Schedule</h2>
+          <h2>APPROXIMATE Schedule</h2>
           <ul>
           <li>9 - 9:30am: Sign in, coffee, breakfast</li>
           <li>9:45 - 10:15am: Intro!</li>
@@ -167,45 +160,31 @@ puts say.upcase
           <li>1:30 - 2:45pm: Session 3</li>
           <li>3:00 - 4:15pm: Session 4</li>
           <li>4:15 - 5pm: Wrapup and final questions</li>
-          <li>5pm - onward: Beer O'Clock. Happy hour at Azucar!</li>
+          <li>5pm - onward: Beer O'Clock. After party at (location!)</li>
           </ul>
         </section>
 
         <section data-state="alert">
           <h1>Ask Questions!</h1>
-          <p>No such thing as a dumb question. For serious.<br><br><br></p>
+          <p>If you're wondering something, there is a 90% chance someone else is wondering it, too. Help out & ask!<br><br></p>
           <h1>Don't be shy!</h1>
-          <p>TAs and teachers are here to help.</p>
+          <p>Or if you're a shy person, that's cool, too. TAs and teachers are here to help.</p>
         </section>
-        
-        <section>
-          <h2>Your Section</h2>
-          <p>You've already been assigned a section.</p>
-          <ul>
-            <li>(B) Beginner: Board Room</li>
-            <li>(AB) Adv. Beginner: Upstairs Panda #5, Possum #6</li>
-            <li>(ABW) Adv. Beginner Windows: Upstairs Conf Room</li>
-            <li>(I) Intermediate: Bakery / Locker Room</li>
-            <li>(ANR) Advanced Non-Rails: Right here</li>
-            <li>(A) Advanced: Couches by the bike room</li>
-          </ul>
-        </section>
-        
+
         <section>
           <h2>Oh no! I'm in the wrong section!</h2>
           <br>
-          <p>Ain't no thang.</p>
-          <br>
-          <p>If class starts and it doesn't seem right for you,<br>it's TOTALLY OKAY to get up and move.</p>
-          <br>
-          <p>(Nobody will get offended, promise!<br>We want you to be in the right place.)</p>
+          <p class="fragment">Ain't no thang.</p>
+          <p class="fragment">If your class doesn't seem like a good fit, it's TOTALLY OKAY to get up and move. </p>
+          <p class="fragment">Find an organizer and tell them where you're coming from, and what you're looking for in terms of level.</p>
+          <p class="fragment">(Nobody will get offended, promise! We want you to be in the right place.)</p>
         </section>
-        
+
         <section>
           <h1>Ready? Break!</h1>
           <p><img src="img/ready-break.jpg" alt="ready-break" width="500" height="354" /></p>
         </section>
-        
+
         <section>
           <h2>You came.</h2>
           <h2>You saw.</h2>
@@ -213,39 +192,45 @@ puts say.upcase
           <h2>You Rail'd.</h2>
           <p>How'd it go?</p>
         </section>
-        
+
         <section>
-          <h1>Help Us Level Up</h1>
+          <h1>Help Us Level Up</h1><br />
+          <div class="fragment">
+            <h3>Right after this presentation</h3>
+            <p>We'll split up to have student and volunteer retros to talk about what was awesome and places for improvement.</p><br />
+          </div>
           <div class="fragment">
             <h3>In the coming days</h3>
-            <p>MeetUp will automatically ask you to review this event. Please help us evolve by replying and being honest.<br><br></p>
-          </div>
-          <div class="fragment">
-            <h3>In a few months</h3>
-            <p>RailsBridge is looking at medium-term effects of this workshop. We'll send you a "what happened to you" survey in a few months. Please fill it out!</p>
+            <p>We'll email you an anonymous survey about the workshop. Be honest!
+              We love your opinions.</p>
           </div>
         </section>
-        
+
         <section>
-          <h2>Feel like thanking us?</h2>
-          <p>Here's how:</p>
+          <h2>Feel like helping? Fantastic!</h2>
           <ol>
-            <li class="fragment"><b>Become a volunteer!</b><br>TA or teach at the next workshop.</li>
-            <li class="fragment"><b>Become an organizer!</b><br>Rails expertise not required.<br>Cat-herding skills helpful.</li>
+            <li class="fragment"><b>Volunteer!</b><br>TA or teach at the next workshop. It's a great way to learn, and as a recent student you'll know what can be hard.</li>
+            <li class="fragment"><b>Organize!</b><br>Rails expertise not required. Cat-herding skills helpful.</li>
+            <li class="fragment"><b>Help with the curriculum!</b></br>The curriculum can always be improved. We'd love to help with your first or fiftieth pull request.</li>
+            <li class="fragment"><b>Spread the word!</b></br>Tell your friends about RailsBridge. <3!</li>
           </ol>
         </section>
 
         <section>
           <h2>How do I keep learning?</h2>
           <ul>
-            <li>Join the SFRuby meetup at <a href="http://sfruby.info">sfruby.info</a></li>
-            <li>Grab a flyer.</li>
+            <li class="fragment">We've collected our favorite tutorials, books, and references at <a href="http://railsbridge.org/learn/resources">http://railsbridge.org/learn/resources</a>.</li>
+            <li class="fragment">If there's anyone you connected with today, exchange contact info with them and meet up to work on something!</li>
+            <li class="fragment">Ask a volunteer (or me) what their favorite local meetup is, or other favorite in-person resources.</li>
+            <li class="fragment">Also: Come back again! (Duh.)</li>
           </ul>
         </section>
-        
+
         <section>
-          <h2>The <code contenteditable>&nbsp;<del>End</del>&nbsp;</code></h2>
-          <p>Let's go drink!</p>
+          <h2>&nbsp;<del> The End </del>&nbsp;</h2>
+          <!-- <h2>The End</h2> -->
+          <p>Let's go chat and become super party friends!</p>
+          <p>(After the retros :D)
           <p><img src="img/beer.jpg" alt="Beer pitcher" width="360"></p>
         </section>
       </div>
@@ -260,7 +245,7 @@ puts say.upcase
 
       <!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
       <div class="progress"><span></span></div>
-      
+
     </div>
 
     <!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
@@ -292,12 +277,12 @@ puts say.upcase
           controls: true,
           progress: true,
           history: true,
-          
+
           theme: query.theme || 'default', // default/neon/beige
           transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
         });
       } );
-      
+
       // Load third party scripts
       head.js( 'lib/js/classList.js' );
       head.js( 'lib/js/highlight.js', function() {
@@ -311,6 +296,6 @@ puts say.upcase
         head.js( 'socket.io/socket.io.js', 'plugin/speakernotes/client.js' );
       }
     </script>
-    
+
   </body>
 </html>
